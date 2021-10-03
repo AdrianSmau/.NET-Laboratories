@@ -1,0 +1,16 @@
+C:\Users\adria\Desktop\Tema1\Tema1\bin\Debug\net5.0\Tema1.exe
+C:\Users\adria\Desktop\Tema1\Tema1\bin\Debug\net5.0\Tema1.deps.json
+C:\Users\adria\Desktop\Tema1\Tema1\bin\Debug\net5.0\Tema1.runtimeconfig.json
+C:\Users\adria\Desktop\Tema1\Tema1\bin\Debug\net5.0\Tema1.runtimeconfig.dev.json
+C:\Users\adria\Desktop\Tema1\Tema1\bin\Debug\net5.0\Tema1.dll
+C:\Users\adria\Desktop\Tema1\Tema1\bin\Debug\net5.0\ref\Tema1.dll
+C:\Users\adria\Desktop\Tema1\Tema1\bin\Debug\net5.0\Tema1.pdb
+C:\Users\adria\Desktop\Tema1\Tema1\obj\Debug\net5.0\Tema1.csproj.AssemblyReference.cache
+C:\Users\adria\Desktop\Tema1\Tema1\obj\Debug\net5.0\Tema1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\Desktop\Tema1\Tema1\obj\Debug\net5.0\Tema1.AssemblyInfoInputs.cache
+C:\Users\adria\Desktop\Tema1\Tema1\obj\Debug\net5.0\Tema1.AssemblyInfo.cs
+C:\Users\adria\Desktop\Tema1\Tema1\obj\Debug\net5.0\Tema1.csproj.CoreCompileInputs.cache
+C:\Users\adria\Desktop\Tema1\Tema1\obj\Debug\net5.0\Tema1.dll
+C:\Users\adria\Desktop\Tema1\Tema1\obj\Debug\net5.0\ref\Tema1.dll
+C:\Users\adria\Desktop\Tema1\Tema1\obj\Debug\net5.0\Tema1.pdb
+C:\Users\adria\Desktop\Tema1\Tema1\obj\Debug\net5.0\Tema1.genruntimeconfig.cache
