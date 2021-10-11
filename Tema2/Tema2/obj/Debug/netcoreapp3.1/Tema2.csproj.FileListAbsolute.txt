@@ -1,0 +1,14 @@
+C:\Users\ROG\source\repos\Tema2\Tema2\bin\Debug\netcoreapp3.1\Tema2.exe
+C:\Users\ROG\source\repos\Tema2\Tema2\bin\Debug\netcoreapp3.1\Tema2.deps.json
+C:\Users\ROG\source\repos\Tema2\Tema2\bin\Debug\netcoreapp3.1\Tema2.runtimeconfig.json
+C:\Users\ROG\source\repos\Tema2\Tema2\bin\Debug\netcoreapp3.1\Tema2.runtimeconfig.dev.json
+C:\Users\ROG\source\repos\Tema2\Tema2\bin\Debug\netcoreapp3.1\Tema2.dll
+C:\Users\ROG\source\repos\Tema2\Tema2\bin\Debug\netcoreapp3.1\Tema2.pdb
+C:\Users\ROG\source\repos\Tema2\Tema2\obj\Debug\netcoreapp3.1\Tema2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROG\source\repos\Tema2\Tema2\obj\Debug\netcoreapp3.1\Tema2.AssemblyInfoInputs.cache
+C:\Users\ROG\source\repos\Tema2\Tema2\obj\Debug\netcoreapp3.1\Tema2.AssemblyInfo.cs
+C:\Users\ROG\source\repos\Tema2\Tema2\obj\Debug\netcoreapp3.1\Tema2.csproj.CoreCompileInputs.cache
+C:\Users\ROG\source\repos\Tema2\Tema2\obj\Debug\netcoreapp3.1\Tema2.dll
+C:\Users\ROG\source\repos\Tema2\Tema2\obj\Debug\netcoreapp3.1\Tema2.pdb
+C:\Users\ROG\source\repos\Tema2\Tema2\obj\Debug\netcoreapp3.1\Tema2.genruntimeconfig.cache
+C:\Users\ROG\source\repos\Tema2\Tema2\obj\Debug\netcoreapp3.1\Tema2.csproj.AssemblyReference.cache

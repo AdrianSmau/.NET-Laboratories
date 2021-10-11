@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YQZg5S1BTeQNzv2r2UzCI8lHCrfj8twHK3G8mTyOuEVhe9UonKqkgU96Kz72RtW37WgQdTwB7pKnmvqmHJ32rA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ROG\\source\\repos\\Tema2\\Tema2\\Tema2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ROG\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\ROG\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.19\\microsoft.netcore.app.host.win-x64.3.1.19.nupkg.sha512"
+  ],
+  "logs": []
+}
