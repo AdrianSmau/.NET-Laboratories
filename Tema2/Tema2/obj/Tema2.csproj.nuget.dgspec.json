@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ROG\\source\\repos\\Tema2\\Tema2\\Tema2.csproj": {}
+    "C:\\Users\\adria\\Desktop\\.NET-Laboratories\\Tema2\\Tema2\\Tema2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ROG\\source\\repos\\Tema2\\Tema2\\Tema2.csproj": {
+    "C:\\Users\\adria\\Desktop\\.NET-Laboratories\\Tema2\\Tema2\\Tema2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ROG\\source\\repos\\Tema2\\Tema2\\Tema2.csproj",
+        "projectUniqueName": "C:\\Users\\adria\\Desktop\\.NET-Laboratories\\Tema2\\Tema2\\Tema2.csproj",
         "projectName": "Tema2",
-        "projectPath": "C:\\Users\\ROG\\source\\repos\\Tema2\\Tema2\\Tema2.csproj",
-        "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ROG\\source\\repos\\Tema2\\Tema2\\obj\\",
+        "projectPath": "C:\\Users\\adria\\Desktop\\.NET-Laboratories\\Tema2\\Tema2\\Tema2.csproj",
+        "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adria\\Desktop\\.NET-Laboratories\\Tema2\\Tema2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -53,22 +53,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.19, 3.1.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

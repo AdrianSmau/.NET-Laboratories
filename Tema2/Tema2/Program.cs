@@ -1,102 +1,26 @@
 ﻿using System;
-using System.IO;
-using System.Text.RegularExpressions;
 using System.Collections.Generic;
-namespace Tema2
-{   public class Day 
-    {   
-       public int Index{get;set;}
-       public int MaxTemp{get;set;}
-       public int MinTemp{get;set;}
-       public Day()
-       {
-           Index=0;
-           MaxTemp=0;
-           MinTemp=0;
-       }
-    }
-    public class Team 
-    {
-        public string Name{get;set;}
-        public int ScoredGoals{get;set;}
-        public int ConcededGoals{get;set;}
-         public Team()
-        {
-           Name="";
-           ScoredGoals=0;
-           ConcededGoals=0;
-        }
-    }
-    class ProgramBeforeDRY
-    {
-        static void Main(string[] args)
-        {   
-            StreamReader objInputWeather = new StreamReader(".\\weather.dat", System.Text.Encoding.Default);
-            string contents = objInputWeather.ReadToEnd().Trim();                                               //getting the data from the table
-            string[] split=contents.Split((char[])null,StringSplitOptions.RemoveEmptyEntries);
-            int found = 1;
-            int temperaturesCount=0;
-            Day[] days=new Day[30];                           // storing the days and their temperatures in an array
-            for(int i=0 ; i<30 ; i++)
-            {
-                days[i]=new Day();                           //intializing it 
-            }
-            foreach (string s in split)
-             {  if(found.ToString()==s)
-                {   days[found-1].Index=found;                  //we look for the days after their I , then we look for the immediate 2 next temperatures of that day 
-                    temperaturesCount=2;
-                    found++;
-                }
-                else if(temperaturesCount!=0)
-                {   try{
-                    if(temperaturesCount==2) days[found-2].MaxTemp=Int32.Parse(s); //the first temperature is the max one , and the next is the minimum
-                    else days[found-2].MinTemp=Int32.Parse(s);
-                    temperaturesCount--;
-                    }catch(Exception){} 
-                }
-             }
-             int MinSpread=100;
-             int MinIndex=0;
-             foreach(Day d in days)
-             {
-                 if(MinSpread>d.MaxTemp-d.MinTemp) {MinIndex=d.Index;MinSpread=d.MaxTemp-d.MinTemp;}   //computing the minimum difference
-             }
-             Console.WriteLine("Ziua cu media cea mai mica este: "+MinIndex);
-              
+using System.Text;
 
-            StreamReader objInputFootball = new StreamReader(".\\football.dat", System.Text.Encoding.Default);
-            contents = objInputFootball.ReadToEnd().Trim();                                               //getting the data from the table
-            string[] parse=contents.Split((char[])null,StringSplitOptions.RemoveEmptyEntries);
-            found=1;
-            int namefound=0;
-            int goalsfound=0;
-            Team[] teams=new Team[20];
-            for(int i=0 ; i<20 ; i++)
-            {
-                teams[i]=new Team();
-            }
-            foreach(string s in parse)
-            {if((found.ToString()+".")==s) {namefound=1;goalsfound=9;found++;
-                //Console.Write(s+" ");
-                }
-             else
-             {
-                 if(namefound==1) {teams[found-2].Name=s;namefound=0;}
-                 try{
-                 if(goalsfound==4) {teams[found-2].ScoredGoals=Int32.Parse(s);}
-                 if(goalsfound==2) {teams[found-2].ConcededGoals=Int32.Parse(s);}
-                 }catch(Exception e){continue;}
-                 goalsfound--;
-             } 
-            }
-         int MinDif=1000;
-         string MinName="";
-         foreach(Team t in teams)
-         {   int x=t.ScoredGoals-t.ConcededGoals;
-             if(x<0) x=-x;
-             if(MinDif>x) {MinDif=x;MinName=t.Name;}
-         }
-         Console.WriteLine("Echipa cu cea mai mica diferenta de goluri : "+MinName);
+namespace Tema2
+{
+    class Program
+    {
+        private static readonly ProgramBeforeDRY NonDry = new ProgramBeforeDRY();
+        private static readonly ProgramDRY Dry = new ProgramDRY();
+        public static void Main() {
+            Console.WriteLine("Program before applying the DRY principle: ");
+            NonDry.Run();
+            Console.WriteLine("Program after applying the DRY principle: ");
+            Dry.Run();
+            Console.WriteLine("To what extent did the design decisions you made when writing the original programs make it easier or harder to factor out common code?");
+            Console.WriteLine("Since we tried not to read ahead when solving the first two parts, we made some sort of 'spaghetti' code. Fortunately, we made a class for the data objects Weather and FootballTeam. That made it easier for us to refactor the code, to some extent");
+            Console.WriteLine("Was the way you wrote the second program influenced by writing the first?");
+            Console.WriteLine("Since we figured out the parsing function as well as the necessity to hold the information extracted from the dat file in a class, after figuring out the parsing logic for the weather dat file, we just needed to figure out the logic behind parsing the football file. But the steps we needed to take remained the same, only the column information changed.");
+            Console.WriteLine("Is factoring out as much common code as possible always a good thing? Did the readability of the programs suffer because of this requirement? How about the maintainability?");
+            Console.WriteLine("In the best case scenario, we start writing the code in a DRY principle from the get-go. Good code writing habits save you a lot of time and effort in writing code. Besides, as we figured out the hard way, after refactoring the code, readability and mantainability improved significantly. Refactored code is easier to grasp, and can be understood by anyone who reads it, without being given the context behind it.");
+            Console.WriteLine("Ce ati invatat din acest kata?");
+            Console.WriteLine("Acest kata ne-a facut sa ne regandim obisnuintele de a scrie cod. De multe ori pe parcursul facultatii, nu ne gandeam inainte cum am putea sa optimizam procesul de scriere de cod, ne apucam de scris si ce iesea era bun atata timp cat mergea si facea ce trebuie. On the long run, mentalitatea aceasta nu e cea mai eficienta.");
         }
     }
 }
